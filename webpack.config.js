@@ -24,10 +24,10 @@ module.exports = () => {
             extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
             plugins: [PnpWebpackPlugin],
             alias: {
-                '@components': resolve(__dirname, './src/client/components'),
-                '@scripts': resolve(__dirname, './src/client/scripts'),
-                '@images': resolve(__dirname, './src/client/images'),
-                '@icons': resolve(__dirname, './src/client/images/icons'),
+                '@components': resolve(__dirname, './src/components'),
+                '@utils': resolve(__dirname, './src/utils'),
+                '@images': resolve(__dirname, './src/images'),
+                '@icons': resolve(__dirname, './src/images/icons'),
             },
         },
         resolveLoader: {

@@ -1,7 +1,9 @@
 figma.showUI(__html__);
 
-figma.ui.onmessage = msg => {
-    console.log(msg);
+figma.ui.onmessage = ({ type }) => {
+    if (type === 'hello') {
+        alert('Hello, world!');
+    }
 
-    figma.closePlugin('Vadyan');
+    figma.closePlugin();
 };
