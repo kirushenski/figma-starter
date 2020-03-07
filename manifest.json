@@ -1,0 +1,23 @@
+{
+  "name": "GDS",
+  "id": "818094845980221623",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "menu": [
+    {"name": "Create Text", "command": "text"},
+    {"name": "Create Frame", "command": "frame"},
+    {"separator": true},
+    {"name": "Create Shape",
+     "menu": [
+       {"name": "Create Circle", "command": "circle"},
+       {"separator": true},
+       {"name": "Create Rectangle", "command": "rectangle"}
+     ]
+    }
+  ],
+  "relaunchButtons": [
+    {"command": "edit", "name": "Edit shape"},
+    {"command": "open", "name": "Open Shaper", "multipleSelection": true}
+  ]
+}

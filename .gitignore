@@ -1,0 +1,11 @@
+/node_modules
+.env
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+yarn-error.log
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
