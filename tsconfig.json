@@ -1,6 +1,19 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "jsx": "react"
-    }
+        "target": "esnext",
+        "allowJs": true,
+        "jsx": "react",
+        "noEmit": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@utils/*": ["src/utils/*"],
+            "@images/*": ["src/images/*"],
+            "@icons/*": ["src/images/icons/*"]
+        }
+    },
+    "exclude": ["node_modules", "build"]
 }

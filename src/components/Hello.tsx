@@ -1,17 +1,17 @@
-import * as React from 'react';
+import React from 'react';
 
-const Hello = () => {
+interface IHello {
+    name?: string;
+}
+
+const Hello: React.FC<IHello> = ({ name }) => {
     const onClick = () => {
         parent.postMessage({ pluginMessage: 'hello' }, '*');
     };
 
-    const sum = (a: number, b: number): number => a + b;
-
-    console.log(sum('a', 1));
-
     return (
         <button type="button" onClick={onClick}>
-            Click me
+            Click me {name}
         </button>
     );
 };
