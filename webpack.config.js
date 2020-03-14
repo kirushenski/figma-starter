@@ -21,13 +21,12 @@ module.exports = () => {
         devtool: isDev && 'inline-source-map',
         stats: { all: false, errors: true, warnings: true, logging: 'warn', colors: true },
         resolve: {
-            extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+            extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.d.ts'],
             plugins: [PnpWebpackPlugin],
             alias: {
                 '@components': resolve(__dirname, './src/components'),
                 '@utils': resolve(__dirname, './src/utils'),
                 '@images': resolve(__dirname, './src/images'),
-                '@icons': resolve(__dirname, './src/images/icons'),
             },
         },
         resolveLoader: {

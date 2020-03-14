@@ -5,7 +5,6 @@ import LogoIcon from '@icons/logo.svg';
 
 // TODO Можно ли избавиться от пустого html
 // TODO Можно ли избавиться от генерации ui.js
-// TODO Добавить изображение
 // TODO Добавить утилиту
 // TODO Добавить emotion
 // TODO Проработать список расширений модулей для ts
@@ -15,11 +14,12 @@ import LogoIcon from '@icons/logo.svg';
 // TODO Выкатить релиз
 
 const App = () => {
+    const onClick = () => console.log('click');
     return (
         <div>
             <h1>Figma Starter</h1>
             <LogoIcon />
-            <Hello />
+            <Hello onClick={onClick} />
         </div>
     );
 };

@@ -1,18 +1,18 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "allowJs": true,
+        "target": "ESNext",
+        "module": "ESNext",
         "jsx": "react",
+        "allowJs": true,
         "noEmit": true,
-        "strict": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
+        "strict": true,
         "baseUrl": "./",
         "paths": {
             "@components/*": ["src/components/*"],
             "@utils/*": ["src/utils/*"],
-            "@images/*": ["src/images/*"],
-            "@icons/*": ["src/images/icons/*"]
+            "@images/*": ["src/images/*"]
         }
     },
     "exclude": ["node_modules", "build"]

@@ -27,7 +27,7 @@ module.exports = {
     settings: {
         'import/resolver': {
             node: {
-                extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
+                extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.d.ts'],
             },
         },
         react: {
@@ -35,10 +35,17 @@ module.exports = {
         },
     },
     rules: {
+        '@typescript-eslint/camelcase': 0,
         '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-var-requires': 0,
-        '@typescript-eslint/interface-name-prefix': [2, { prefixWithI: 'always' }],
+        '@typescript-eslint/no-use-before-define': 0,
+        '@typescript-eslint/interface-name-prefix': 0,
+        'import/no-named-as-default': 0,
         'import/no-unresolved': [2, { ignore: ['@'] }],
         'react/prop-types': 0,
+        'react/display-name': 0,
+        'react-hooks/rules-of-hooks': 2,
+        'react-hooks/exhaustive-deps': 1,
     },
 };
